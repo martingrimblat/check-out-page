@@ -1,0 +1,30 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+.container {
+	width: 70%;
+	margin: auto;
+}
+
+.form {
+	width: 510px;
+}
+main {
+	justify-content: space-between;
+}
+
+.last-inputs {
+	justify-content: space-between;
+}
+.last-inputs .input-style{
+	width: 250px;
+}
+

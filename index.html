@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Check out Page</title>
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+  <link rel="stylesheet" type="text/css" href="./utilities.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+  <section class="page-title">
+    <h1>
+      Checkout
+    </h1>
+  </section>
+
+  <main class="flex">
+
+    <section class="form">
+
+      <div class="form-inputs">
+        <form action="data.php" method="get">
+          <div class="contact-info">
+            <h2>
+              Contact information
+            </h2>
+            <label>E-mail<br>
+              <div class="input-style">
+               <span class="material-icons">
+                  email
+               </span>
+                <input type="email" placeholder="Enter your email...">
+              </div>
+            </label><br>
+
+            <label>Phone<br>
+              <div class="input-style">
+                <span class="material-icons">
+                  phone
+                </span>
+                <input type="tel" placeholder="Enter your phone...">
+              </div>
+            </label><br>
+          </div>
+
+          <div class="s-adress">
+            <h2>
+              Shipping address
+            </h2>
+
+            <label>Full name<br>
+              <div class="input-style">
+                <span class="material-icons">
+                  account_circle
+                </span>
+                <input type="text" placeholder="Enter your full name...">
+              </div>
+            </label><br>
+
+            <label>Adress<br>
+              <div class="input-style">
+                <span class="material-icons">
+                  home
+                </span>
+                <input type="text" placeholder="Your adress...">
+              </div>
+            </label><br>
+
+            <label>City<br>
+              <div class="input-style">
+                <span class="material-icons">
+                  location_city
+                </span>
+                <input type="text" placeholder="Your city...">
+              </div>
+            </label><br>
+
+            <div class="last-inputs flex">
+            <label>Country<br>
+                <div class="input-style">
+                  <span class="material-icons">
+                    public
+                  </span>
+                  <select name="countries">
+                    <option value="" selected disabled hidden>Your country...</option>
+                    <option>Argentina</option>
+                    <option>United States</option>
+                    <option>Brazil</option>
+                  </select>
+                </div>
+              </label><br>
+
+              <label>Postal code<br>
+                <div class="input-style">
+                  <span class="material-icons">
+                    markunread_mailbox
+                  </span>
+                  <input type="text" placeholder="Your postal code..">
+                </div>
+              </label><br>
+            </div>
+          </div>
+
+          <label class="check"><input type="checkbox">Save this information for next time</label><br>
+        </div>
+
+        <input type="submit" value="Continue" class="submit-btn">
+      </form>
+    </section>
+
+    <section class="shopping">
+      <div class="product">
+        <img src="photo1.png">
+        <div class="product-info">
+          <p>
+            Vintage Backbag
+          </p>
+          <div class="prices">
+            <p>$54.99</p>
+            <p>$94.99</p>
+          </div>
+          <div class="counter-card">
+            <button onclick="decrement()">-</button>
+            <p id="counter"></p>
+            <button onclick="increment()">+</button>
+          </div>
+        </div>
+
+        <div class="product">
+        <img src="photo2.png">
+        <div class="product-info">
+          <p>
+            Levi shoes
+          </p>
+          <div class="prices">
+            <p>$74.99</p>
+            <p>$124.99</p>
+          </div>
+          <div class="counter-card">
+            <button onclick="decrement()">-</button>
+            <p id="counter"></p>
+            <button onclick="increment()">+</button>
+          </div>
+        </div>
+        <script type="text/javascript" src="./script.js"></script>
+    </section>
+
+  </main>
+
+</div>
+</body>
+</html>
