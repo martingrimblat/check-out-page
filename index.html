@@ -115,44 +115,62 @@
     </section>
 
     <section class="shopping">
-      <div class="product">
-        <img src="photo1.png">
-        <div class="product-info">
-          <p>
-            Vintage Backbag
-          </p>
-          <div class="prices">
-            <p>$54.99</p>
-            <p>$94.99</p>
+      <div class="shopping-container">
+        <div class="product flex">
+            <img src="photo1.png">
+            <div class="product-info">
+              <p class="product-name">
+                Vintage Backbag
+              </p>
+              <div class="prices flex">
+                <p class="orange">$54.99</p>
+                <p class="tachado">$94.99</p>
+              </div>
+              <div class="counter-card flex">
+                <button class="counter-btn" onclick="decrement_1()">-</button>
+                <h3 id="counter-1"></h3>
+                <button class="counter-btn" onclick="increment_1()">+</button>
+              </div>
+              <script type="text/javascript" src="./script.js"></script>
+            </div>
           </div>
-          <div class="counter-card">
-            <button onclick="decrement()">-</button>
-            <p id="counter"></p>
-            <button onclick="increment()">+</button>
-          </div>
-        </div>
 
-        <div class="product">
-        <img src="photo2.png">
-        <div class="product-info">
-          <p>
-            Levi shoes
-          </p>
-          <div class="prices">
-            <p>$74.99</p>
-            <p>$124.99</p>
+          <div class="product flex">
+              <img src="photo2.png">
+              <div class="product-info">
+                <p class="product-name">
+                  Levi shoes
+                </p>
+                <div class="prices flex">
+                  <p class="orange">$74.99</p>
+                  <p class="tachado">$124.99</p>
+                </div>
+                <div class="counter-card flex">
+                  <button class="counter-btn" onclick="decrement_2()">-</button>
+                  <h3 id="counter-2"></h3>
+                  <button class="counter-btn" onclick="increment_2()">+</button>
+                </div>
+                <script type="text/javascript" src="./script.js"></script>
+            </div>
           </div>
-          <div class="counter-card">
-            <button onclick="decrement()">-</button>
-            <p id="counter"></p>
-            <button onclick="increment()">+</button>
+
+          <div class="resume">
+            <div class="flex">
+              <p>Shipping</p>
+              <p id="shipping-cost">$19</p>
+            </div>
+
+            <div class="flex">
+              <p>Total</p>
+              <p id="total-cost"></p>
+            </div>
           </div>
+
         </div>
-        <script type="text/javascript" src="./script.js"></script>
     </section>
 
   </main>
-
+    <script type="text/javascript" src="./script.js"></script>
 </div>
 </body>
 </html>
